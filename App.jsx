@@ -1,7 +1,17 @@
 import {View, Text} from 'react-native';
-import React from 'react';
-
+import React, {useEffect} from 'react';
+import firestore from '@react-native-firebase/firestore';
 const App = () => {
+  useEffect(() => {
+    console.log('App start');
+    // firestore()
+    //   .collection('Todo')
+    //   .get()
+    //   .then(snapShot => {
+    //     console.log('snapShot ->', snapShot);
+    //   });
+  }, []);
+
   return (
     <View>
       <Text>App</Text>
